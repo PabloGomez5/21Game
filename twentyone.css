@@ -1,0 +1,63 @@
+.header {
+    background-color:DarkGray;
+    text-align: center;
+}
+.streakDatas {
+    background-color:DarkGray;
+}
+.streakDataValues {
+    background-color: lightskyblue;
+}
+.centered {
+    text-align: center;
+}
+.topStreaks{
+    height: 210px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+.lose {
+    color: red;
+}
+
+.win {
+    color: forestgreen;
+}
+.card {
+    border: 1px solid #000000;
+    background: #ffffff;
+    margin: 7px;
+    min-height:25%;
+    max-height:35%;
+    border-radius: 5px;
+    font-weight: bold;
+    float:none;
+    display:inline-block;
+    vertical-align:top;
+    padding: 20px;
+}
+.card_list {
+    background: #3e9e4c;
+    height: 300px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40% 20%
+}
+
+.podium {
+    background-color: gold;
+}
+
+.uefa {
+    background-color: lightcyan ;
+}
+.lastones {
+    background-color: lightcoral;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome to the 21 game !</title>
+    <script type="text/javascript" src="twentyone.js"></script>
+    <script type="text/javascript" src="games_data.js"></script>
+    <link rel="stylesheet" type="text/css" href="twentyone.css" />
+
+</head>
+<body bgcolor="#d3d3d3" >
+<div id="header" class="header">
+    <h1>21 GAME</h1>
+</div>
+
+<form id="form1">
+    <span id="nickname_law" >Write your nickname to be able to play :</span><br><br>
+    <input type="text" id="fname" name="fname">
+
+    <span id="player_nickname_confirmation" class="streakDatas"></span>
+    <span id="player_nickname" class="streakDataValues"></span>
+
+    <span id="round" class="streakDatas"></span>
+    <span id="round_value" class="streakDataValues"></span>
+    <span id="current_streak" class="streakDatas"></span>
+    <span id="current_streak_value" class="streakDataValues"></span>
+    <span id="longest_streak" class="streakDatas"></span>
+    <span id="longest_streak_value" class="streakDataValues"></span>
+
+</form>
+<br>
+<input id="save_nickname" type="submit" value="submit" onclick="set_nickname()" /><br><br>
+
+<div class="grid">
+    <div class="centered">
+        <div id="player">PLAYER</div>
+        <div id="player_cards" class="card_list">
+        </div>
+        <br/>
+        <br/>
+        <div id="player_message" class="centered">&nbsp;</div>
+        <br/>
+        <br/>
+        <input id="hitmebutton" type="submit" value="hit me" onclick="getCard()" />
+        <input id="stickutton" type="submit" value="stick" onclick="playerSticks()" />
+    </div>
+
+    <div class="centered">
+        <div id="dealer">DEALER</div>
+        <div id="dealer_cards" class="card_list">
+        </div>
+        <br/>
+        <br/>
+        <div id="dealer_message" class="centered">&nbsp;</div>
+    </div>
+
+    <div class="centered">
+
+        <div class="topStreaks">TOP 10 STREAKS
+
+        <div class="podium"> 1.<span id="position_one"></span></div>
+        <div class="podium">2.<span id="position_two"></span></div>
+        <div class="podium">3.<span id="position_three"></span></div>
+        <div class="uefa">4.<span id="position_four"></span></div>
+        <div class="uefa">5.<span id="position_five"></span></div>
+        <div class="uefa">6.<span id="position_six"></span></div>
+        <div class="lastones">7.<span id="position_seven"></span></div>
+        <div class="lastones">8.<span id="position_eigth"></span></div>
+        <div class="lastones">9.<span id="position_nine"></span></div>
+        <div class="lastones">10.<span id="position_ten"></span></div>
+
+        </div>
+        <input id="update_streaks" type="submit" value="Update" onclick="get_the_top_streaks()"/>
+    </div>
+</div>
+<div class="centered">
+
+    <input id="newgamebutton" type="submit" value="New Game" onclick="new_game()" />
+    <input id="save_record" type="submit" value="Save your Record" onclick="save_the_record()"/>
+
+</div>
+
+<br>
+<br>
+
+</body>
+</html>
+
